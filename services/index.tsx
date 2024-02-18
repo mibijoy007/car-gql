@@ -10,6 +10,12 @@ export const getCarsList = async()=>{
         id
         name
         price
+        image {
+          url
+        }
+        carType
+        carEngine
+        carBrand
       }
     }
     

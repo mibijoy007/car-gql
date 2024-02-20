@@ -12,7 +12,7 @@ function CarCard(props: any) {
 
     },[props.car])
     return car&&(
-        <div className='border-2 border-blue-500 rounded-md m-5 p-5 justify-center'>
+        <div className='border-2 border-blue-500 rounded-md m-5 p-5 w-full max-w-[278px] justify-center'>
             <h2 className='text-[20px]
                 font-medium mb-2'>{car.name}
             </h2>
@@ -34,36 +34,27 @@ function CarCard(props: any) {
             mb-3 object-contain'
             />
 
-            <div className='flex  justify-around group-hover:hidden '>
-                <div className='text-center text-gray-500'>
-                    <PiSteeringWheelFill />
+            <div className='flex justify-around group-hover:hidden '>
+                <div className='text-center text-gray-500 flex justify-between items-center '>
+                    <PiSteeringWheelFill className='mr-1' />
                     <h2 className='line-clamp-5 text[14px] '>{car.carType}</h2>
                 </div>
 
                 
-                <div className='text-center text-gray-500'>
-                    <FaGasPump />
-                    <h2 className='line-clamp-5 text[14px] '>{car.carAvg} MPG</h2>
+                <div className='text-center text-gray-500 flex justify-between items-center'>
+                    <FaGasPump className='mr-1' />
+                    <h2 className='line-clamp-5 text[14px] '> {car.carAvg} MPG</h2>
                 </div>
-
-                <div className='items-center text-center text-gray-500'>
-                    <PiEngineFill />
-                    <h2 className='line-clamp-5 text[14px]  '>{} </h2>
-                </div>
-
-                
-
 
             </div>
-            <button className=' group-hover:flex bg-gradient-to-t from-blue-400 to-blue-700
+            <button className='
+                bg-gradient-to-t
+                from-blue-400 
+                to-blue-700
                 mt-5
-                hover:bg-blue-700
-                bg-blue-500
                 font-semibold
                 px-5 cursor-pointer
-                p-2 rounded-full text-white
-             
-            
+                p-2 rounded-full text-white            
             '>Rent Now</button>
             
 

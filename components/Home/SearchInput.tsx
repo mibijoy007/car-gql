@@ -2,7 +2,7 @@ import React from 'react'
 
 function SearchInput() {
     return (
-        <div className='mt-5'>
+        <div className='mt-5 '>
             <h2 className='text-center text-[20px]
             text-gray-400 pb-5 font-semibold'>Lets Search What you Need!</h2>
 
@@ -26,6 +26,7 @@ function SearchInput() {
                 </div>
             </div>
         </div>
+
     )
 }
 

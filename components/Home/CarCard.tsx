@@ -12,16 +12,19 @@ function CarCard(props: any) {
 
     },[props.car])
     return car&&(
-        <div className='border-2 border-blue-500 rounded-md m-5 p-5 w-full max-w-[278px] justify-center'>
+        <div className='hover:border-2 border-blue-500 rounded-md m-5 p-5 w-full max-w-[278px] justify-center'>
             <h2 className='text-[20px]
                 font-medium mb-2'>{car.name}
             </h2>
 
             <h2 className='text-[20px]
                 font-medium mb-2'>
+                <p className='font-semibold'>
                 <span className='text-[12px] font-light text-black'>$</span>
                 {car.price}
+
                 <span className='text-[12px] text-black font-light'>/day</span>
+                </p>
 
             </h2>
 
